@@ -15,6 +15,7 @@ The goal is to create a fully functional WordPress site running with Nginx in HT
 ```bash
 git clone <repository_url>
 cd <repository_folder>
+```
 
 ## Ressources
 
