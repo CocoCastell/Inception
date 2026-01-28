@@ -19,10 +19,10 @@ cd <repository_folder>
 
 ## Ressources
 
-https://docs.docker.com/
-https://tuto.grademe.fr/inception/#wordpress
-https://medium.com/@ssterdev/inception-guide-42-project-part-i-7e3af15eb671
-https://openclassrooms.com/en/courses/7905646-optimize-your-deployment-with-docker-containers
-https://www.youtube.com/watch?v=3c-iBn73dDE
+https://docs.docker.com/ 
+https://tuto.grademe.fr/inception/#wordpress 
+https://medium.com/@ssterdev/inception-guide-42-project-part-i-7e3af15eb671 
+https://openclassrooms.com/en/courses/7905646-optimize-your-deployment-with-docker-containers 
+https://www.youtube.com/watch?v=3c-iBn73dDE 
 
 AI was used to understand Linux commands, deepen knowledge of Linux concepts, obtain debugging techniques relevant to the project and analyze how APK packages and their permission assignments work in Alpine.
