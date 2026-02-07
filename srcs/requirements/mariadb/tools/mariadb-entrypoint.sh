@@ -6,12 +6,11 @@ if [ ! -d /var/lib/mysql/mysql ]; then
 	
 	{
 		echo "FLUSH PRIVILEGES;"
-		echo "ALTER USER 'root'@'localhost' IDENTIFIED BY 'impossiblepassword';"
+		echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '$MYSQL_ROOT_PW';"
 		echo "CREATE DATABASE $WP_DB;"
-		echo "CREATE USER '$WP_ADMIN'@'%' IDENTIFIED BY '$WP_ADMIN_PW';"
-		echo "GRANT ALL PRIVILEGES ON $WP_DB.* TO $WP_ADMIN;"
-       		echo "CREATE USER '$WP_USER1'@'%' IDENTIFIED BY '$WP_USER1_PW';"
-		echo "GRANT SELECT, DELETE, INSERT, UPDATE ON $WP_DB.* TO $WP_USER1;"
+		echo "CREATE USER '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PW';"
+		echo "GRANT ALL PRIVILEGES ON $WP_DB.* TO '$MYSQL_USER'@'%';"
+		echo "FLUSH PRIVILEGES;"
 	}	> $DB_CONF_FILE
 
 	mariadb-install-db --user=mysql
